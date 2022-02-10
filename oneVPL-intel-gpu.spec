@@ -18,9 +18,9 @@ BuildRequires:  pkgconfig(libdrm) >= 2.4
 BuildRequires:  pkgconfig(libva) >= 1.9
 
 %description
-Intel® oneVPL GPU Runtime is a Runtime implementation of oneVPL API for Intel
-Gen GPUs. Runtime provides access to hardware-accelerated video decode, encode
-and filtering.
+Intel oneVPL GPU Runtime is a Runtime implementation of oneVPL API for Intel Gen
+GPUs. Runtime provides access to hardware-accelerated video decode, encode and
+filtering.
 
 %package        devel
 Summary:        Development files for %{name}
