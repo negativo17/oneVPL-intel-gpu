@@ -1,9 +1,10 @@
 Name:           oneVPL-intel-gpu
-Version:        22.2.0
+Version:        22.2.1
 Release:        1%{?dist}
 Summary:        Intel oneVPL GPU Runtime
 License:        MIT
 URL:            https://www.intel.com/content/www/us/en/developer/tools/oneapi/onevpl.html
+ExclusiveArch:  x86_64
 
 Source0:        https://github.com/oneapi-src/%{name}/archive/refs/tags/intel-onevpl-%{version}.tar.gz
 Patch0:         %{name}-fix-build.patch
@@ -59,5 +60,8 @@ rm -fr %{buildroot}%{_docdir}
 %{_libdir}/pkgconfig/libmfx-gen.pc
 
 %changelog
-* Tue Feb 08 2022 Simone Caronni <negativo17@gmail.com> - 2022.2.0-1
+* Wed Mar 02 2022 Simone Caronni <negativo17@gmail.com> - 22.2.1-1
+- Update to 22.2.1.
+
+* Tue Feb 08 2022 Simone Caronni <negativo17@gmail.com> - 22.2.0-1
 - First build.
