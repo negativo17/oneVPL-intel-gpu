@@ -53,7 +53,7 @@ rm -fr %{buildroot}%{_docdir}
 %license LICENSE
 %doc README.md CONTRIBUTING.md
 %{_libdir}/libmfx-gen.so.1.2
-%{_libdir}/libmfx-gen.so.1.2.6
+%{_libdir}/libmfx-gen.so.1.2.7
 
 %files devel
 %{_libdir}/libmfx-gen.so
