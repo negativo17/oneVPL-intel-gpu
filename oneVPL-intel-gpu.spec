@@ -1,6 +1,6 @@
 Name:           oneVPL-intel-gpu
 Version:        22.3.1
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Intel oneVPL GPU Runtime
 License:        MIT
 URL:            https://www.intel.com/content/www/us/en/developer/tools/oneapi/onevpl.html
@@ -16,7 +16,9 @@ BuildRequires:  cmake
 BuildRequires:  gcc-c++
 BuildRequires:  oneVPL-devel
 BuildRequires:  pkgconfig(libdrm) >= 2.4
-BuildRequires:  pkgconfig(libva) >= 1.9
+# Should be 1.9 but fails with libva < 2.12 (VAProcFilterCap3DLUT):
+# https://github.com/oneapi-src/oneVPL-intel-gpu/issues/198
+BuildRequires:  pkgconfig(libva) >= 1.12
 
 %description
 Intel oneVPL GPU Runtime is a Runtime implementation of oneVPL API for Intel Gen
@@ -62,6 +64,9 @@ rm -fr %{buildroot}%{_docdir}
 %{_libdir}/pkgconfig/libmfx-gen.pc
 
 %changelog
+* Wed Mar 30 2022 Simone Caronni <negativo17@gmail.com> - 22.3.1-2
+- Adjust libva requirement.
+
 * Sat Mar 19 2022 Simone Caronni <negativo17@gmail.com> - 22.3.1-1
 - Update to 22.3.1.
 
