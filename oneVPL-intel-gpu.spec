@@ -12,7 +12,8 @@ Patch0:         %{name}-fix-build.patch
 # Every other component has the 2022.x.x format:
 Requires:       oneVPL%{?_isa}
 
-BuildRequires:  cmake
+BuildRequires:  cmake3
+BuildRequires:  devtoolset-9-gcc-c++
 BuildRequires:  gcc-c++
 BuildRequires:  oneVPL-devel
 BuildRequires:  pkgconfig(libdrm) >= 2.4
@@ -37,14 +38,23 @@ developing applications that use %{name}.
 %autosetup -p1 -n %{name}-intel-onevpl-%{version}
 
 %build
+mkdir build
+pushd build
+
 export VPL_BUILD_DEPENDENCIES="%{_prefix}"
-%cmake \
+. /opt/rh/devtoolset-9/enable
+%cmake3 \
     -DBUILD_TESTS:BOOL='OFF' \
-    -DCMAKE_BUILD_TYPE:STRING="Fedora"
-%cmake_build
+    -DCMAKE_BUILD_TYPE:STRING="Fedora" \
+    ..
+%cmake3_build
+
+popd
 
 %install
-%cmake_install
+pushd build
+%cmake3_install
+popd
 
 # Let RPM pick up documents in the files section
 rm -fr %{buildroot}%{_docdir}
