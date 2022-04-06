@@ -49,8 +49,6 @@ export VPL_BUILD_DEPENDENCIES="%{_prefix}"
 # Let RPM pick up documents in the files section
 rm -fr %{buildroot}%{_docdir}
 
-%{?ldconfig_scriptlets}
-
 %files
 %license LICENSE
 %doc README.md CONTRIBUTING.md
