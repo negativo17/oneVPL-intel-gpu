@@ -1,7 +1,7 @@
-diff -Naur oneVPL-intel-gpu-intel-onevpl-22.2.0.old/_studio/shared/mfx_logging/include/mfx_utils_logging.h oneVPL-intel-gpu-intel-onevpl-22.2.0/_studio/shared/mfx_logging/include/mfx_utils_logging.h
---- oneVPL-intel-gpu-intel-onevpl-22.2.0.old/_studio/shared/mfx_logging/include/mfx_utils_logging.h	2022-02-08 08:28:23.987185168 +0100
-+++ oneVPL-intel-gpu-intel-onevpl-22.2.0/_studio/shared/mfx_logging/include/mfx_utils_logging.h	2022-02-08 08:28:48.986604619 +0100
-@@ -29,6 +29,7 @@
+diff -Naur oneVPL-intel-gpu-intel-onevpl-22.4.2.old/_studio/shared/mfx_logging/include/mfx_utils_logging.h oneVPL-intel-gpu-intel-onevpl-22.4.2/_studio/shared/mfx_logging/include/mfx_utils_logging.h
+--- oneVPL-intel-gpu-intel-onevpl-22.4.2.old/_studio/shared/mfx_logging/include/mfx_utils_logging.h	2022-05-25 15:28:07.919706923 +0200
++++ oneVPL-intel-gpu-intel-onevpl-22.4.2/_studio/shared/mfx_logging/include/mfx_utils_logging.h	2022-05-25 15:28:11.690776580 +0200
+@@ -30,6 +30,7 @@
  #include <string>
  #include <map>
  #include <sstream>
