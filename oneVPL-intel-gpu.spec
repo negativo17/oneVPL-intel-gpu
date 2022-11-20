@@ -65,7 +65,7 @@ rm -fr %{buildroot}%{_docdir}
 %license LICENSE
 %doc README.md CONTRIBUTING.md
 %{_libdir}/libmfx-gen.so.1.2
-%{_libdir}/libmfx-gen.so.1.2.7
+%{_libdir}/libmfx-gen.so.1.2.8
 %dir %{_libdir}/libmfx-gen
 %{_libdir}/libmfx-gen/enctools.so
 
