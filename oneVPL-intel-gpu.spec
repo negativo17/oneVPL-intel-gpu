@@ -1,5 +1,5 @@
 Name:           oneVPL-intel-gpu
-Version:        22.6.4
+Version:        23.1.0
 Release:        1%{?dist}
 Summary:        Intel oneVPL GPU Runtime
 License:        MIT
@@ -62,6 +62,9 @@ rm -fr %{buildroot}%{_docdir}
 %{_libdir}/pkgconfig/libmfx-gen.pc
 
 %changelog
+* Mon Jan 30 2023 Simone Caronni <negativo17@gmail.com> - 23.1.0-1
+- Update to 23.1.0.
+
 * Tue Dec 13 2022 Simone Caronni <negativo17@gmail.com> - 22.6.4-1
 - Update to 22.6.4.
 
