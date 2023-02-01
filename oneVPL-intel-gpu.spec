@@ -14,7 +14,6 @@ Requires:       oneVPL%{?_isa}
 
 BuildRequires:  cmake3
 BuildRequires:  devtoolset-9-gcc-c++
-BuildRequires:  gcc-c++
 BuildRequires:  oneVPL-devel
 BuildRequires:  pkgconfig(libdrm) >= 2.4
 # Should be 1.9 but fails with libva < 2.12 (VAProcFilterCap3DLUT):
