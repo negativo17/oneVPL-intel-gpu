@@ -1,5 +1,5 @@
 Name:           oneVPL-intel-gpu
-Version:        23.3.4
+Version:        23.4.0
 Release:        1%{?dist}
 Summary:        Intel oneVPL GPU Runtime
 License:        MIT
@@ -7,7 +7,6 @@ URL:            https://www.intel.com/content/www/us/en/developer/tools/oneapi/o
 ExclusiveArch:  x86_64
 
 Source0:        https://github.com/oneapi-src/%{name}/archive/refs/tags/intel-onevpl-%{version}.tar.gz
-Patch0:         %{name}-fix-build.patch
 
 # Every other component has the 2022.x.x format:
 Requires:       oneVPL%{?_isa}
@@ -73,6 +72,9 @@ rm -fr %{buildroot}%{_docdir}
 %{_libdir}/pkgconfig/libmfx-gen.pc
 
 %changelog
+* Thu Nov 02 2023 Simone Caronni <negativo17@gmail.com> - 23.4.0-1
+- Update to 23.4.0.
+
 * Tue Oct 03 2023 Simone Caronni <negativo17@gmail.com> - 23.3.4-1
 - Update to 23.3.4.
 
