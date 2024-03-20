@@ -2,8 +2,8 @@
 %global mfx_ver_minor 10
 
 Name:           oneVPL-intel-gpu
-Version:        24.1.3
-Release:        2%{?dist}
+Version:        24.1.5
+Release:        1%{?dist}
 Summary:        Intel oneVPL GPU Runtime
 License:        MIT
 URL:            https://www.intel.com/content/www/us/en/developer/tools/oneapi/onevpl.html
@@ -71,6 +71,9 @@ popd
 %{_libdir}/pkgconfig/libmfx-gen.pc
 
 %changelog
+* Wed Mar 20 2024 Simone Caronni <negativo17@gmail.com> - 24.1.5-1
+- Update to 24.1.5.
+
 * Tue Feb 20 2024 Simone Caronni <negativo17@gmail.com> - 24.1.3-2
 - Import changes from Fedora.
 
