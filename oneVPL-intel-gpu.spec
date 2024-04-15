@@ -2,7 +2,7 @@
 %global mfx_ver_minor 10
 
 Name:           oneVPL-intel-gpu
-Version:        24.1.5
+Version:        24.2.0
 Release:        1%{?dist}
 Summary:        Intel oneVPL GPU Runtime
 License:        MIT
@@ -57,6 +57,9 @@ developing applications that use %{name}.
 %{_libdir}/pkgconfig/libmfx-gen.pc
 
 %changelog
+* Mon Apr 15 2024 Simone Caronni <negativo17@gmail.com> - 24.2.0-1
+- Update to 24.2.0.
+
 * Wed Mar 20 2024 Simone Caronni <negativo17@gmail.com> - 24.1.5-1
 - Update to 24.1.5.
 
