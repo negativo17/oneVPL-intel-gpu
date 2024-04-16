@@ -35,7 +35,7 @@ The %{name}-devel package contains libraries and header files for
 developing applications that use %{name}.
 
 %prep
-%autosetup -p1 -n %{name}-intel-onevpl-%{version}
+%autosetup -p1 -n vpl-gpu-rt-intel-onevpl-%{version}
 
 %build
 %cmake
